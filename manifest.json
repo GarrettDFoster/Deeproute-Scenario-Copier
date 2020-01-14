@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Deeproute Scenario Copier",
+    "version": "2020.01.13",
+    "content_scripts": [
+        {
+            "matches": [
+                "http://deeproute.com/*?js=nplaybook*"
+            ],
+            "js": [
+                "jquery-3.4.1.min.js",
+                "insert_copy_play.js"
+            ]
+        }
+    ],
+    "web_accessible_resources": ["copy_play.js"]	
+}
